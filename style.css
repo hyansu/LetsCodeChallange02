@@ -1,0 +1,382 @@
+:root {
+    --background: #F3F2EE;
+    --blue-grey-100: #EEF3F7;
+    --gray-100: #EBEBEB;
+    --gray-200: #666666;
+    --blue-100: #0B65C2;
+    --blue-200: #004182;
+
+    --maxContainerWidth: 1130px;
+    --minContainerWidth:712px;
+    --containerWidth: 92.70vw;
+}
+
+/*
+* 
+*  GENERAL
+*
+*/
+
+body {
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: Rambla, sans-serif;
+    font-size:  18px;
+    font-weight: 700;
+    color: black;
+    margin-top: 12px;
+}
+
+h2 {
+    font-family: Rambla, sans-serif;
+    font-size:  14px;
+    font-weight: 400;
+    color: black;
+    margin-top: 12px;
+}
+
+h3 {
+    font-family: Rambla, sans-serif;
+    font-size:  12px;
+    font-weight: 700;
+    color: black;
+}
+
+h3 {
+    font-family: Rambla, sans-serif;
+    font-size:  12px;
+    font-weight: 700;
+    color: black;
+}
+
+h4 {
+    font-family: Rambla, sans-serif;
+    font-size:  11px;
+    font-weight: 400;
+    color: black;
+}
+
+/*
+* 
+*  HEADER
+*
+*/
+
+header {
+    height: 59px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    width: var(--containerWidth);
+    min-width: var(--minContainerWidth);
+    max-width: var(--maxContainerWidth);
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.logoSearchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+}
+
+.search {
+    margin-left: 7px;
+    width: 235px;
+    height: 34px;
+    background-color: var(--blue-grey-100);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: width 0.2s linear;
+}
+
+.searchIcon {
+    height:34px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 8px;
+    cursor: text;
+}
+
+.searchIcon img {
+    width: 11px;
+    height: 11px;
+}
+
+.search input {
+    background-color: var(--blue-grey-100);
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 0px;
+}
+
+.search:focus-within {
+    width: 290px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid var(--gray-100);
+}
+
+.search:focus-within img {
+    margin-left: -1px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    text-align: center;
+    gap: 24px;
+}
+
+header ul li img {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+header ul li p {
+    font-family: Ropa Sans, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+}
+
+header ul li a {
+    opacity: 0.7;
+    display: block;
+}
+
+header ul li a:hover, header ul li a:hover p {
+    opacity: 1;
+}
+
+.photoProfile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.photoProfile img {
+    width: 25px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.photoProfile p {
+    text-align: center;
+    font-family: Ropa Sans, sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    opacity: 0.7;
+}
+
+.photoProfile a:hover p {
+    opacity: 1;
+}
+
+/*
+* 
+*  MAIN
+*
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+main .container {
+    width: var(--containerWidth);
+    min-width: var(--minContainerWidth);
+    max-width: var(--maxContainerWidth);
+    background: white;
+}
+
+/*
+* 
+*  SECTION - PROFILE
+*
+*/
+
+#profile {
+    margin-top: 38px;
+    padding-bottom: 28px;
+    position: relative;        
+    border-radius: 4px;
+}
+
+.backgroundProfile {
+    width: 100%;
+    height: 135px;
+    background: url("img/background.png") no-repeat;
+    background-size: cover;
+}
+
+#profile img {
+    width: 106px;
+    border-radius: 50%;    
+    margin-top: -76px;
+    margin-left: 9px;
+}
+
+.infoProfile {
+    padding-left: 22px;
+}
+
+#profile p {
+    font-family: Rambla, sans-serif;
+    font-size:  14px;
+    font-weight: 400;
+    color: var(--gray-200);
+    margin-top: 5px;
+}
+
+.profileButton {
+    display: flex;
+    justify-content: flex-start;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.profileButton .primaryButton {
+    font-family: Rambla, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+    background: var(--blue-100);
+    border-radius: 15px;
+    border: none;
+    padding: 4px 16px;
+    transition: background 0.1s linear;
+}
+
+.profileButton .secondaryButton {
+    font-family: Rambla, sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--gray-200);
+    background: white;
+    border-radius: 15px;
+    border: solid 1px var(--gray-200);
+    padding: 4px 16px;
+    transition: box-shadow 0.1s linear;
+}
+
+.profileButton .primaryButton:hover {
+    background-color: var(--blue-200);
+}
+
+.profileButton .secondaryButton:hover {
+    background-color: var(--gray-100);
+    box-shadow: inset 0 0 0 1px var(--gray-200);
+}
+
+/*
+* 
+*  SECTION - EXPERIENCE
+*
+*/
+
+#experience {
+    margin-top: 32px;
+    border-bottom: solid 1px var(--gray-100);
+    border-radius: 4px 4px 0px 0px
+}
+
+/*
+* 
+*  SECTION - EDUCATION
+*
+*/
+
+#education {
+    border-radius: 0px 0px 4px 4px;
+}
+
+/*
+* 
+*  SECTION - GENERAL
+*
+*/
+
+.subTitle {
+    margin-top: 16px;
+    margin-left: 21px;
+}
+
+.sectionContainer {
+    margin-top: 10px;
+    margin-left: 21px;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 21px;
+    margin-top: 19px;
+}
+
+.item img {
+    width: 35px;
+}
+
+.info {
+    padding-bottom: 34px;
+    width: 100%;
+    border-bottom: solid 1px var(--gray-100);
+}
+
+.sectionContainer:last-child .info {
+    border-bottom: none;
+    padding-bottom: 34px;
+}
+
+.info > a {
+    font-family: Rambla, sans-serif;
+    font-size:  11px;
+    font-weight: 400;
+    line-height: 13px;
+    color: var(--gray-200);
+}
+
+.info > a:hover {
+    text-decoration: underline var(--blue-100);
+}
+
+.description p {
+    font-family: Rambla, sans-serif;
+    white-space: pre-line;
+    font-size:  11px;
+    line-height: 13px;
+    font-weight: 400;
+    color: black;
+}
